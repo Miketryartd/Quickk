@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="auth.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Quick | Log in</title>
+</head>
+<body>
+    <!--Top-Section-->
+<section>
+    <ul>
+        <li><h1>Q<span>uick</span></h1></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="login.html">Log in</a></li>
+    </ul>
+</section>
+
+    <!--EndTop-->
+
+    <!--Sign up Form-->
+    <div class="parentContainer">
+        <form method="GET" action="login.html"  id="loginForm">
+            <ul>
+                <li><h1>Log in<i class='bx bxs-key'></i></h1></li>
+              
+                   
+                <li><i class='bx bx-envelope' ></i><input type="email"  data-ALL="inps" placeholder="Example@gmail.com" id="Email-login"></li>
+                <li><i class='bx bx-user-circle' ></i><input type="text" placeholder="Username.." id="User-login"  data-ALL="inps"></li>
+                <li><i class='bx bx-lock-alt'></i><input type="password" placeholder="Password..." id="Userpass-login"  data-ALL="inps"></li>
+                <li><i class='bx bx-phone' ></i><input type="tel" placeholder="Phone number(optional)" id="PhoneNumber"  ></li>
+                <li>
+              <i class='bx bx-shield' ></i><input type="text" id="pin" placeholder="18-Letter Pin"  data-value="User18PIN"  data-ALL="inps"></li>
+               
+               
+                
+                <li><button id="button-signup" value="submit">Log in</button></li>
+                <li><p>Don't have an account? <a href="index.html">Sign up</a></p></li>
+            
+            </ul>
+
+
+
+        </form>
+    </div>
+    
+
+
+    <!--Sign up End-->
+      <script src="authentication/SignupAUTH.js" type="module"></script>
+   <script src="authentication/LoginAUTH.js" type="module"></script>
+
+   
+ 
+</body>
+</html>
