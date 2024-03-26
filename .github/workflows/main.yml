@@ -1,7 +1,16 @@
-on:push
+name: My Workflow
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-first-job:
-runs-on: windows-latest
-steps:
-- run: node --version
-- run: npm --version
+  first-job:
+    runs-on: windows-latest
+    steps:
+      - name: Check Node.js version
+        run: node --version
+
+      - name: Check npm version
+        run: npm --version
